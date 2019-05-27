@@ -5,7 +5,7 @@ class Test001:
     @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
     @allure.step(title="这是测试步骤01")
     def test_001_1(self):
-        with open("./Snipaste.png","rb") as f:
+        with open("./imgage\\Snipaste.png","rb") as f:
             allure.attach("截图",f.read(),allure.attach_type.PNG)
         print("-->test_001_1")
         assert True
